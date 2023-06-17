@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, h2{
+    background-color: #ffffff5f;
+    text-align: center;
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a52121;
+    gap: 18px;
+    padding: 20px 0;
+    top: 0;
+    @media (min-width: 768px) {
+        .cabecera {
+            flex-direction: row;
+            justify-content: space-around;
+        }   
+    }
+}
+
+header nav{
+    width: 100%;
+}
+.navbar-expand-lgbg-body-tertiary {
+
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    }
+    .navbar ul li a:hover{
+        background-color: rgb(128, 45, 0);
+    }
+.logomoyfit{
+    width: 60px;
+}
+
+@media (min-width: 500px) {
+    .navbar {
+        flex-direction: row;
+    }
+}
+.textito{
+    background-color: #a52121;text-align: center;
+}
+body{
+    font-family: 'Montez', cursive;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../img/prueba\ de\ fondo.jpg);
+    background-size: 200%;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    display: inline;
+    flex-direction: inline;
+
+}
+
+
+.padre-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    h2{
+        text-align: center;
+        background-color: white;
+        background-color: #ffffff;
+    }
+    h1{
+        color: rgb(252, 155, 29);
+        text-align: center;
+        flex-flow: wrap;
+    }
+}
+@media (min-width: 768px) {
+    .padre-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .padre-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.padre-cards__card {
+    width: 18rem;
+    -webkit-box-shadow: 0px 0px 17px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 17px 0px rgba(255,255,255,1);
+    box-shadow: 0px 0px 17px 0px rgba(255,255,255,1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+.padre-cards__card h4, .padre-cards__card p {
+    color: #ffffff;
+    background-color: rgba(8, 8, 5, 0.118);
+}
+
+.padre-cards__card button {
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.padre-cards__card--oferta {
+    background-color: #a52121;
+}
+.imagen-horizontal{
+    position:relative;
+    width: 100%;
+    height: px;
+    text-align: center;
+
+}
+
+img{
+    max-width: 100%;
+}
+.rem{
+    font-size: 1rem;
+}
+
+.px{
+    font-size: 16px;
+}
+
+.strong{
+    border: solid 1px white;
+    padding: 5px;
+    display: inline-block;
+    font-size: 32px;
+    font-family: arial color white;
+    width: 100px;
+    height: 110px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.padre-redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    .redes {
+        width: 35px;
+    }
+}
+
+@media (min-width: 768px) {
+    .padre-redes {
+        flex-direction: column;
+        position: fixed;
+        top: 40%;
+        right: 2%;
+    }
+}
+
+.content-clad{
+    text-align: center;
+    align-items: center;
+}
+
+.form{
+    background-color: rgba(255, 136, 0, 0.384);
+    text-align: center;
+}
+h3{
+    background-color: rgba(240, 248, 255, 0.281);
+}
+
+#carouselExample{
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+}
+    
+    .carousel-item img{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    }
+/*carrito*/
+#carrito-completo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: #a52121;
+    .carrito {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: 100px;
+    }
+    p{
+        background-color: antiquewhite;
+        font-family: Georgia, 'Times New Roman', Times, serif; 
+    }
+}
+
+
+
+.formulario{
+    text-align: center;
+    background-color: #c860106d; 
+}
+.contact_form{  
+    width: 460px; 
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #fbfbfb; 
+    padding-left: 30px; 
+}
+input{
+    background-color: #fbfbfb; 
+    width: 408px; 
+    height: 40px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ff0008; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+}
+textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ff0909; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+}
+label{
+    display: block; 
+    float: center;  
+}
+.buton{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #ab7644; 
+    border-color: #c19121; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+}
+span{
+    color: #ff00c3; 
+}
+.aviso{
+    font-size: 13px;  
+    color: #0e0e0e;  
+}
+.formulario input:focus{
+    outline:0;
+    border: 1px solid #97d848;
+}
+.formulario textarea:focus{
+    outline:0;
+    border: 1px solid #97d848;
+}
